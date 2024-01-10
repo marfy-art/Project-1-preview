@@ -1,0 +1,372 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-family: 'Biryani', sans-serif;
+}
+
+
+/* Nav bar design style */
+
+
+.line-left{
+    width: 1px;
+    height: 1382px;
+    background-color: #646464;
+    position: absolute;
+    top: 0;
+    left: 90px;
+    z-index:2000 ;
+}
+
+.line-right{
+    width: 1px;
+    height: 1382px;
+    background-color: #646464;
+    position: absolute;
+    top: 0;
+    right: 90px;
+    z-index:2000 ;
+}
+
+.logo{
+    color: #1C3F39;
+    font-family: 'Biryani', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%; /* 36px */
+
+}
+
+
+nav {
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #E6E3D4;
+    color: #212121;
+    gap: 60px;
+    padding: 30px 10%;
+    z-index: 1000;
+    transition: all ease-in-out .60s;
+    border-bottom: 1px solid #646464;
+
+    
+}
+
+nav ul{
+    display: flex;
+    gap: 60px;
+}
+
+
+nav ul li a{
+    color: #7B7B7B;
+    font-family: 'Biryani', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 36px */
+    transition: all ease-in-out .60s;
+}
+
+nav ul li a:hover{
+    color: #1C3F39;
+}
+
+.active{
+    color: #1C3F39;
+}
+
+.buttons{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.profile{
+    font-family: 'Biryani', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1; /* 27px */
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: transparent;
+    color: #1C3F39;
+    border: 1px solid #1C3F39;
+    transition: all ease-in-out .60s;
+}
+
+.profile:hover{
+    background: #1C3F39;
+    color: white;
+    border: none;
+}
+
+/* welcome section design style */
+
+
+.home{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+    /* height: 100vh; */  /* we have to change this for exam */
+    background: #E6E3D4;
+    color: #212121;
+    padding: 0 120px;
+    transition: all ease-in-out .60s;
+    align-items: center;
+}
+
+.main-text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.home h1{
+    color: #212121;
+    text-align: center;
+    font-family: 'Biryani', sans-serif;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 96px */
+    max-width: 1200px;
+}
+
+.home p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    font-family: lato;
+    line-height: 150%;
+}
+
+.home h4{
+    color: #212121;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 36px */
+    margin-top: 60px;
+}
+
+.hire-us{
+    padding: 15px 40px;
+    align-items: center;
+    border-radius: 120px;
+    background: #1C3F39;
+    color: white;
+    align-items: center;
+    transition: all ease-in-out .60s;
+    margin-bottom: 60px; /* we have to change this for exam */
+
+}
+
+.hire-us:hover{
+    background: transparent;
+    border: 1px solid #1C3F39;
+    color: #1C3F39;
+}
+
+
+.img-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    background: #E6E3D4;
+    padding: 0 120px;
+    transition: all ease-in-out .60s;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 160px; /* we have to change this for exam */
+
+}
+
+.hero-image{
+    width: 1080px;
+    height: 414px;
+    object-fit: cover;
+    border-radius: 310px;
+}
+
+
+ /* our status */
+
+
+ .our-status{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 60px 90px;
+    transition: all ease-in-out .60s;
+    align-items: center;
+    background: #172926;
+
+ }
+
+ .our-status h2{
+    color: #FFF;
+    font-family: 'Biryani', sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 64px */
+ }
+
+ .status{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+ }
+
+ .status-content{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .status-content h1{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Biryani', sans-serif;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 96px */
+ }
+
+.status-content p{
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 36px */
+}
+
+
+/* Service section design code */
+
+.service{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+    background: white;
+    padding: 0 120px;
+    transition: all ease-in-out .60s;
+    align-items: center;
+    margin: 160px 0;
+}
+
+.service-header{
+    display: flex;
+    flex-direction: row;
+    gap: 104px;
+}
+
+.service-header h2{
+    color: #212121;
+    font-family: 'Biryani', sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 76.8px */
+}
+
+.service-text-devider{
+    max-width: 570px;
+    
+}
+
+.service-header p{
+    color: #666;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+    
+}
+
+.devider{
+    height: 1px;
+    background: #646464;
+    width: 100%;
+    margin-top: 60px;
+}
+
+
+.service-content{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    flex-wrap: wrap;
+
+}
+
+
+.service-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    background: #F1F1F1;
+    width: 570px;
+    height: 370px;
+    padding: 60px;
+}
+
+.service-list h2{
+    color: #1C3F39;
+    font-family: 'Biryani', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 57.6px */
+    }
+
+
+.service-list p{  
+    color: #666;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+    }
+
+    .service-list a{
+        color: #1C3F39;
+        font-weight: 700;
+    }
+    
+
+    /* Work  section design code */
